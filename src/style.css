@@ -1,3 +1,25 @@
+.app .nav {
+    width: 200%
+}
+
+.app .nav-item {
+    justify-self: space-between;
+    margin-left: 36px;
+    margin-top: 2px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav {
+    display: inline-flex;
+    flex-flow: row;
+    justify-content: stretch;
+    height: 30px;
+    width: display;
+    background-color: #EE9972;
+}
+
 .main {
     display: flex;
     justify-content: stretch;
@@ -9,7 +31,6 @@
     justify-content: stretch;
     height: 130px;
     justify-content: center;
-    background-color: black;
     margin-right: flex-end;
 }
 
@@ -27,7 +48,6 @@
 }
 
 .header ul {
-    background-color: #F4CE14;
     display: inline-flex;
     flex-flow: row wrap;
     justify-content: stretch;
@@ -35,7 +55,7 @@
     padding-right: 8px;
 }
 
-a:link {
+.header a:link {
     display: flex;
     flex-wrap: wrap;
     color: black;
@@ -60,19 +80,19 @@ a:link {
     align-self: center;
 }
 
-.hero {
+.main .hero {
     display: inline-flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: stretch;
     height: 400px;
     background-color: #495E57;
+    width: inherit;
   }
 
 .hero .box2 {
     display: inline-flex;
     flex-direction: row wrap;
     justify-content: stretch;
-    margin-right: 50%;
 }
 
 .hero_txt h1 {
@@ -83,13 +103,14 @@ a:link {
     font-family: Markazi;
     font-size: 48px;
     line-height: 0.5;
+    width: 300px;
 }
 
 .hero_txt h2 {
     padding-left: 20px;
     color: white;
     font-family: Markazi;
-    font-size: 40;
+    font-size: 28px;
     line-height: 0;
 }
 
@@ -101,16 +122,17 @@ a:link {
     font-family: Karla;
     font-size: 16;
     line-height: 1.5;
+    width: 300px;
 }
 
 .hero img {
     display: flex;
-    flex-direction: row wrap;
+    flex-direction: column wrap;
     width: 375px;
     height: 412px;
     border-radius: 16px;
     margin-top: 30px;
-    margin-left: 130px;
+    margin-left: 18%;
 }
 
 .highlights {
@@ -139,6 +161,7 @@ a:link {
 .boxes {
     display: inline-flex;
     justify-content: stretch;
+    justify-content: middle;
     flex-flow: column wrap;
     height: 450px;
     justify-content: space-between;
@@ -217,7 +240,7 @@ a:link {
     background-color: #EDEFEE;
     border-top-right-radius: 16px;
     border-top-left-radius: 16px;
-    margin-left: 6px;
+    margin-left: 10px;
 }
 
 .box7 {
@@ -225,7 +248,7 @@ a:link {
     background-color: #EDEFEE;
     border-top-right-radius: 16px;
     border-top-left-radius: 16px;
-    margin-left: 6px;
+    margin-left: 10px;
 }
 
 .footer {
@@ -238,11 +261,41 @@ a:link {
     text-decoration: none;
   }
 
+.footer img {
+    width: 162px;
+    height: 216px;
+    margin-top: -36px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.footer ul {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    width: 100px;
+    margin-top: 30px;
+}
+
 .footer li {
     display: flex;
+    flex-direction: column;
     background-color: FFFFFF;
-    justify-content: space-between;
     padding: 5px;
+    align-self: flex-start;
+    text-wrap: nowrap;
+}
+
+.footer a:link {
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+    flex-flow: column;
+    flex-direction: column;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    align-self: flex-start;
 }
 
 .footer p {
@@ -266,20 +319,10 @@ button {
     margin-top: 32px;
 }
 
-
-
 .images {
     display: inline-flex;
     margin-bottom: 0px;
 }
-
-
-
-
-
-
-
-
 
 .box img {
     width: 16px;
@@ -311,4 +354,91 @@ button {
 .cards {
     display: inline-flex;
     margin-top: 0px;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: stretch;
+    justify-content: middle;
+    flex-flow: column wrap;
+}
+
+.testimonials h1 {
+    align-self: center;
+    justify-self: middle;
+    margin-top: 120px;
+    margin-bottom: 80px;
+    margin-left: -100px;
+}
+
+.box8 {
+    display: inline-flex;
+    justify-content: stretch;
+    flex-flow: column wrap;
+    justify-content: space-between middle;
+    height: 156px;
+}
+
+.testimonials .box1 {
+    background-color: #EDEFEE;
+    width: 157px;
+    height: 125px;
+}
+
+.testimonials .box2 {
+    background-color: #EDEFEE;
+    width: 157px;
+    height: 125px;
+    margin-left: 6.5%;
+}
+
+.testimonials p {
+    margin-left: 20px;
+}
+
+.about {
+    display: inline-flex;
+    justify-content: stretch;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    margin-top: 200px;
+    padding-left: 20px;
+    height: 420px;
+}
+
+.about .box1 {
+    width: 280px;
+}
+
+.about h1 {
+    color: black;
+    font-family: Markazi;
+    font-size: 48px;
+    line-height: 0.5;
+}
+
+.about h2 {
+    color: black;
+    font-family: Markazi;
+    font-size: 28px;
+    line-height: 0;
+}
+
+.about .box2 {
+    display: inline-flex;
+    padding-left: 20px;
+}
+
+.about .box3 {
+    width: 270px;
+    height: 360px;
+    background-color: #EDEFEE;
+    margin-top: 60px;
+}
+
+.about .box4 {
+    width: 270px;
+    height: 360px;
+    background-color: #EDEFEE;
+    margin-left: -170px;
 }

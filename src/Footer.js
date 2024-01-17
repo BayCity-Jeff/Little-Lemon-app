@@ -5,9 +5,9 @@ import './style.css';
 function Footer({children}) {
     return (
         <div className="footer">
-            <p>
-                Image Placeholder
-            </p>
+            <div classname="box1">
+                <img src="f1.jpg" />
+            </div>
             <Nav/>
             <p>
                 contact
