@@ -1,12 +1,12 @@
 import './App.css';
 import './style.css';
 import React from 'react';
-import Main from './Main.js';
+import BookingForm from './BookingForm.js';
 
 function Booking() {
     return (
       <>
-        <Main />
+        <BookingForm />
       </>
     );
   }
