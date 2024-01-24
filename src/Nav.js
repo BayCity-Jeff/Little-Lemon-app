@@ -1,9 +1,9 @@
 import React from 'react';
 import './style.css';
 
-function Header() {
+function Nav() {
     return (
-        <header className="header">
+        <header className="navigation">
             <ul>
                 <li><a href="/home">HOME</a></li>
                 <li><a href="/about">ABOUT</a></li>
@@ -16,4 +16,4 @@ function Header() {
     )
 }
 
-export default Header
+export default Nav

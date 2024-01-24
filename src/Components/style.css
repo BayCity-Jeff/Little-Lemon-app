@@ -27,9 +27,9 @@ nav {
 }
 .header {
     display: inline-flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: stretch;
-    height: 130px stretch;
+    height: 130px;
     justify-content: center;
     margin-right: flex-end;
 }
@@ -38,7 +38,6 @@ nav {
     display: inline-flex;
     flex-grow: row wrap;
     margin-right: 120px;
-    margin-top: 10px;
 }
 
 .header img {
@@ -254,9 +253,8 @@ nav {
 
 .footer {
     display: inline-flex;
-    flex-flow: row wrap;
     width: auto;
-    height: 460px stretch;
+    height: 460px;
     background-color: FFFFFF;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -445,11 +443,10 @@ button {
     margin-left: -170px;
 }
 
-.bookingForm  {
+.bookingForm {
     display: flex;
     justify-content: middle;
     flex-direction: column;
-    margin-top: 48px;
 }
 
 .bookingForm button {

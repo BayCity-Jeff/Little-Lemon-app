@@ -1,18 +1,14 @@
 import React from 'react';
-import Testimonials from './Testimonials.js';
-import About from './About.js';
-import Hero from './Hero.js';
-import Specials from './Specials.js';
+import { useState } from 'react';
+import { Component } from 'react';
+
+
 
 function Main({children}) {
+
     return (
         <div className="main">
-            <Hero></Hero>
-            <Specials></Specials>
-            <Testimonials>
-            </Testimonials>
-            <About>
-            </About>
+            <h1>Display Booking Info</h1>
         </div>
     )
 }

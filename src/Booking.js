@@ -1,14 +1,15 @@
-import './App.css';
 import './style.css';
 import React from 'react';
 import BookingForm from './BookingForm.js';
 
 function Booking() {
     return (
-      <>
-        <BookingForm />
-      </>
-    );
-  }
+        <div className="booking">
+            <div className="form">
+                <BookingForm/>
+            </div>
+        </div>
+    )
+}
 
-  export default Booking;
+export default Booking;
