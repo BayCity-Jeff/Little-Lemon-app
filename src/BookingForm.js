@@ -11,7 +11,7 @@ function BookingForm() {
 
 
 
-    const [availableTimes, setAvailableTimes] = useState([ 'Select Time', '17:00', '18:00', '19:00', '20:00', '21:00', '22:00' ]);
+    const [availableTimes, setAvailableTimes] = useState([ '17:00', '18:00', '19:00', '20:00', '21:00', '22:00' ]);
 
     let option1 = availableTimes[0];
     let option2 = availableTimes[1];
@@ -19,7 +19,6 @@ function BookingForm() {
     let option4 = availableTimes[3];
     let option5 = availableTimes[4];
     let option6 = availableTimes[5];
-    let option7 = availableTimes[6];
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -33,9 +32,9 @@ function BookingForm() {
     return (
         <div className="bookingForm">
             <form onSubmit={handleSubmit}>
-                <label htmlFor="date">Choose date:   {date}</label>
-                <input type="date" id="date" name="date" value={date} onChange={(e) => setDate(e.target.value)}/>
-                <label htmlFor="time">Choose time:   {time}</label>
+                <label htmlFor="date">Choose date: {date}</label>
+                <input type="date" id="date" name="date" value={date} onChange={(e) => setDate(e.target.value)} required/>
+                <label htmlFor="time">Choose time: {time}</label>
                 <select id="time" name="time" value={time} onChange={(e) => setTime(e.target.value)}>
                     <option>{option1}</option>
                     <option>{option2}</option>
@@ -43,9 +42,8 @@ function BookingForm() {
                     <option>{option4}</option>
                     <option>{option5}</option>
                     <option>{option6}</option>
-                    <option>{option7}</option>
                 </select>
-                <label htmlFor="guests">Number of guests:   {guests}</label>
+                <label htmlFor="guests">Number of guests: {guests}</label>
                 <input
                     type="number"
                     placeholder="1"
@@ -62,7 +60,7 @@ function BookingForm() {
                     <option>Anniversary</option>
                 </select>
             </form>
-            <button disabled={!time} type="submit">
+            <button disabled={!time} disabled={!date} disabled={!guests} type="submit">
                 Make Your reservation
             </button>
         </div>
