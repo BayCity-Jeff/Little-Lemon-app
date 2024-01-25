@@ -27,7 +27,6 @@ function BookingForm({ list }) {
         setTime("00:00");
         setGuests("1");
         setOccasion("None");
-        
     };
 
     return (
