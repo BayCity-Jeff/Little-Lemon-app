@@ -1,8 +1,8 @@
-.app .nav {
-    width: 200%
+#root .nav {
+    width: 100vw;
 }
 
-.app .nav-item {
+#root .nav-item {
     justify-self: space-between;
     margin-left: 36px;
     margin-top: 2px;

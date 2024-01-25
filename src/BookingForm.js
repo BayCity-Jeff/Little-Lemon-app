@@ -1,24 +1,24 @@
 import './style.css';
 import React from 'react';
 import { useState } from "react";
+import Booking from './Booking';
 
 
-function BookingForm() {
+function BookingForm({ list }) {
     const [date, setDate] = useState("");
     const [time, setTime] = useState("Select Time");
     const [guests, setGuests] = useState("1");
     const [occasion, setOccasion] = useState("None");
 
+    const availableSlots = [ '17:00', '18:00', '19:00', '20:00', '21:00', '22:00' ];
 
 
-    const [availableTimes, setAvailableTimes] = useState([ '17:00', '18:00', '19:00', '20:00', '21:00', '22:00' ]);
-
-    let option1 = availableTimes[0];
-    let option2 = availableTimes[1];
-    let option3 = availableTimes[2];
-    let option4 = availableTimes[3];
-    let option5 = availableTimes[4];
-    let option6 = availableTimes[5];
+    let option1 = availableSlots[0];
+    let option2 = availableSlots[1];
+    let option3 = availableSlots[2];
+    let option4 = availableSlots[3];
+    let option5 = availableSlots[4];
+    let option6 = availableSlots[5];
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -27,6 +27,7 @@ function BookingForm() {
         setTime("00:00");
         setGuests("1");
         setOccasion("None");
+        
     };
 
     return (
@@ -60,7 +61,7 @@ function BookingForm() {
                     <option>Anniversary</option>
                 </select>
             </form>
-            <button disabled={!time} disabled={!date} disabled={!guests} type="submit">
+            <button disabled={!time} type="submit">
                 Make Your reservation
             </button>
         </div>
