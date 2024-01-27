@@ -1,12 +1,10 @@
-import './style.css';
-import React from 'react';
+import React from "react";
 
-function ConfirmedBooking() {
-
+function ConfirmedBooking () {
     return (
-        <div className="confirmedBooking">
-            <h1>Booking Confirmed</h1>
-        </div>
+        <header>
+            <h6>Your Booking is Confirmed!</h6>
+        </header>
     )
 };
 

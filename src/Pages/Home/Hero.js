@@ -1,6 +1,5 @@
 import React from 'react';
-import Nav from './Nav.js';
-import './style.css';
+import './home.css';
 
 function Hero({children}) {
     return (

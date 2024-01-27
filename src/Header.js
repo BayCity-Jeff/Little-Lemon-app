@@ -1,6 +1,6 @@
 import React from 'react';
-import Nav from './Nav.js';
 import './style.css';
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
@@ -10,12 +10,12 @@ function Header() {
             </div>
             <div className="navigation">
                 <ul>
-                    <li><a href="/home">HOME</a></li>
-                    <li><a href="/about">ABOUT</a></li>
-                    <li><a href="/menu">MENU</a></li>
-                    <li><a href="/reservations">RESERVATIONS</a></li>
-                    <li><a href="/order">ORDER ONLINE</a></li>
-                    <li><a href="/login">LOGIN</a></li>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/Placeholder">ABOUT</a></li>
+                    <li><a href="/Placeholder">MENU</a></li>
+                    <li><a href="/Booking">RESERVATIONS</a></li>
+                    <li><a href="/Placeholder">ORDER ONLINE</a></li>
+                    <li><a href="/Placeholder">LOGIN</a></li>
                 </ul>
             </div>
         </div>

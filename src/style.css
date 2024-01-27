@@ -14,24 +14,30 @@
 nav {
     display: inline-flex;
     flex-flow: row;
-    justify-content: stretch;
-    height: 30px;
-    width: display;
+    width: 100vw;
+    min-height: 30px;
     background-color: #EE9972;
+    min-width: 400px;
 }
+
+
 
 .main {
     display: flex;
     justify-content: stretch;
     flex-flow: column wrap;
 }
+
+
+
 .header {
+    width: 80vw;
     display: inline-flex;
     flex-flow: row wrap;
     justify-content: stretch;
     height: 130px stretch;
-    justify-content: center;
-    margin-right: flex-end;
+    justify-content: start;
+
 }
 
 .header .logo {
@@ -51,9 +57,11 @@ nav {
 .header ul {
     display: inline-flex;
     flex-flow: row wrap;
-    justify-content: stretch;
+    justify-content: flex-end;
     padding-left: 2px;
     padding-right: 8px;
+    max-width: 50vw;
+    min-width: 280px;
 }
 
 .header a:link {
@@ -70,6 +78,17 @@ nav {
     font-weight: bold;
     align-self: flex-start;
 }
+
+header h1 {
+    font-size: 30px;
+    margin-left:28px;
+}
+
+header h6 {
+    font-size: 40px;
+    margin-left: 69px;
+}
+
 .header li {
     display: flex;
     flex-wrap: wrap;
@@ -81,186 +100,19 @@ nav {
     align-self: center;
 }
 
-.main .hero {
-    display: inline-flex;
-    flex-flow: column wrap;
-    justify-content: stretch;
-    height: 400px;
-    background-color: #495E57;
-    width: inherit;
-  }
 
-.hero .box2 {
-    display: inline-flex;
-    flex-direction: row wrap;
-    justify-content: stretch;
-}
-
-.hero_txt h1 {
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-right: 20px;
-    color: #F4CE14;
-    font-family: Markazi;
-    font-size: 48px;
-    line-height: 0.5;
-    width: 300px;
-}
-
-.hero_txt h2 {
-    padding-left: 20px;
-    color: white;
-    font-family: Markazi;
-    font-size: 28px;
-    line-height: 0;
-}
-
-.hero_txt p {
-    display: flex;
-    flex-flow: row wrap;
-    padding-left: 20px;
-    color: white;
-    font-family: Karla;
-    font-size: 16;
-    line-height: 1.5;
-    width: 300px;
-}
-
-.hero img {
-    display: flex;
-    flex-direction: column wrap;
-    width: 375px;
-    height: 412px;
-    border-radius: 16px;
-    margin-top: 30px;
-    margin-left: 18%;
-}
-
-.highlights {
-    display: flex;
-    justify-content: stretch;
-    flex-flow: column wrap;
-}
-
-.hl_txt h1 {
-    display: inline-flex;
-    justify-content: stretch;
-    flex-flow: nowrap;
-    padding-left: 20px;
-    padding-top: 69px;
-    color: black;
-    font-family: Markazi;
-    font-size: 48px;
-    line-height: 1.5;
-}
-
-.highlights button {
-    margin-top: 0px;
-    margin-left: 94px;
-}
-
-.boxes {
-    display: inline-flex;
-    justify-content: stretch;
-    justify-content: middle;
-    flex-flow: column wrap;
-    height: 450px;
-    justify-content: space-between;
-    margin-left: 20px;
-}
-
-.tbox {
-    width: 233px;
-    height: 265px;
-    padding-inline: 8px;
-    margin-top: 0px;
-}
-
-.boxes img {
-    background-color: #EDEFEE;
-    width: 233px;
-    height: 150px;
-    border-top-right-radius: 16px;
-    border-top-left-radius: 16px;
-}
-
-.boxes h1 {
-    padding-left: 14px;
-    padding-top: 8px;
-    padding-right: 30px;
-    color: black;
-    font-family: Markazi;
-    font-size: 18px;
-    font-weight: bolder;
-    line-height: 0.5;
-}
-
-.boxes h2 {
-    display: inline;
-    padding-top: 8px;
-    color: #EE9972;
-    font-family: Markazi;
-    font-size: 18px;
-    font-weight: bolder;
-    line-height: 0.5;
-}
-
-.boxes p {
-    padding-left: 14px;
-    padding-right: 14px;
-    padding-top: 14px;
-    line-height: 1.5;
-    color: #495E57;
-}
-
-.boxes h3 {
-    font-family: Karla;
-    font-size: 16px;
-    padding-left: 15px;
-    padding-right: 15px;
-    vertical-align: bottom;
-}
-
-.tbox img {
-    width: 16px;
-    height: auto;
-    padding-left: 15px;
-    line-height: 0;
-}
-
-.box5 {
-    width: 233px;
-    background-color: #EDEFEE;
-    border-top-right-radius: 16px;
-    border-top-left-radius: 16px;
-    margin-left: 0px;
-}
-
-.box6 {
-    width: 233px;
-    background-color: #EDEFEE;
-    border-top-right-radius: 16px;
-    border-top-left-radius: 16px;
-    margin-left: 10px;
-}
-
-.box7 {
-    width: 233px;
-    background-color: #EDEFEE;
-    border-top-right-radius: 16px;
-    border-top-left-radius: 16px;
-    margin-left: 10px;
-}
 
 .footer {
     display: inline-flex;
     flex-flow: row wrap;
     width: auto;
-    height: 460px stretch;
+    min-height: 460px stretch;
     background-color: FFFFFF;
     padding-top: 100px;
     padding-bottom: 100px;
     text-decoration: none;
+    margin-left: 8vw;
+    justify-content: space-evenly;
   }
 
 .footer img {
@@ -269,6 +121,7 @@ nav {
     margin-top: -36px;
     margin-left: 15px;
     margin-right: 15px;
+    margin-bottom: 40px;
 }
 
 .footer ul {
@@ -276,7 +129,8 @@ nav {
     flex-flow: column wrap;
     justify-content: flex-start;
     width: 100px;
-    margin-top: 30px;
+    margin-top: 0px;
+    margin-left: 24px;
 }
 
 .footer li {
@@ -303,160 +157,6 @@ nav {
 .footer p {
     justify-content: space-between;
     padding-inline: 69px;
-}
-
-button {
-    width: 200px;
-    height: 60px;
-    border-radius: 16px;
-    background: #F4CE14;
-    color: black;
-    font-family: Karla;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.hero_txt button {
-    margin-left: 20px;
-    margin-top: 32px;
-}
-
-.images {
-    display: inline-flex;
-    margin-bottom: 0px;
-}
-
-.box img {
-    width: 16px;
-    height: auto;
-    padding-left: 15px;
-    line-height: 0;
-}
-
-.box5 h2 {
-    padding-left: 42px;
-}
-
-.box6 h2 {
-    padding-left: 67px;
-}
-
-.box7 h2 {
-    padding-left: 27px;
-}
-
-.box5 h3 {
-    padding-top: 13px;
-}
-
-.box7 h3 {
-    padding-top: 13px;
-}
-
-.cards {
-    display: inline-flex;
-    margin-top: 0px;
-}
-
-.testimonials {
-    display: flex;
-    justify-content: stretch;
-    justify-content: middle;
-    flex-flow: column wrap;
-}
-
-.testimonials h1 {
-    align-self: center;
-    justify-self: middle;
-    margin-top: 120px;
-    margin-bottom: 80px;
-    margin-left: -100px;
-}
-
-.box8 {
-    display: inline-flex;
-    justify-content: stretch;
-    flex-flow: column wrap;
-    justify-content: space-between middle;
-    height: 156px;
-}
-
-.testimonials .box1 {
-    background-color: #EDEFEE;
-    width: 157px;
-    height: 125px;
-}
-
-.testimonials .box2 {
-    background-color: #EDEFEE;
-    width: 157px;
-    height: 125px;
-    margin-left: 6.5%;
-}
-
-.testimonials p {
-    margin-left: 20px;
-}
-
-.about {
-    display: inline-flex;
-    justify-content: stretch;
-    flex-flow: column wrap;
-    justify-content: space-between;
-    margin-top: 200px;
-    padding-left: 20px;
-    height: 420px;
-}
-
-.about .box1 {
-    width: 280px;
-}
-
-.about h1 {
-    color: black;
-    font-family: Markazi;
-    font-size: 48px;
-    line-height: 0.5;
-}
-
-.about h2 {
-    color: black;
-    font-family: Markazi;
-    font-size: 28px;
-    line-height: 0;
-}
-
-.about .box2 {
-    display: inline-flex;
-    padding-left: 20px;
-}
-
-.about .box3 {
-    width: 270px;
-    height: 360px;
-    background-color: #EDEFEE;
-    margin-top: 60px;
-}
-
-.about .box4 {
-    width: 270px;
-    height: 360px;
-    background-color: #EDEFEE;
-    margin-left: -170px;
-}
-
-.bookingForm  {
-    display: flex;
-    justify-content: middle;
-    flex-direction: column;
-    margin-top: 48px;
-}
-
-.bookingForm button {
-    margin-top: 40px;
-    margin-left: 69px;
-}
-
-.bookingForm form {
-    margin-left: 110px;
+    margin-left: 24px;
+    margin-top: 50px;
 }

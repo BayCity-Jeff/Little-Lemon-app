@@ -1,6 +1,6 @@
 import React from 'react';
-import './App.js';
-import './style.css';
+import '../../App.js';
+import './home.css';
 
 function Testimonials() {
     return (
